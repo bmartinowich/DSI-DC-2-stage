@@ -13,7 +13,7 @@
 - [Office Hours](office-hours.md)
 
 ## Communication
-
+- [Asking for Help](asking-for-help.md)
 - Slack
   - You have been invited to two different slack teams:
     - [DSI DC 2](https://dsidc2.slack.com) - Our primary slack team
