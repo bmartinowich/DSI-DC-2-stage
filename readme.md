@@ -6,6 +6,7 @@ In this program, you’ll take on real world problems by analyzing data sets for
 
 ## Administrative
 
+- [Expectations] (expectations.md)
 - [Calendar](generalassemb.ly_nopho7pbo44ahp3bqs7r3qv6r4@group.calendar.google.com)
   - **Includes all lessons and homework assignments with due dates**
 - [Attendance](attendance.md)
