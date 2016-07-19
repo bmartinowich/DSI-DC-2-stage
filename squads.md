@@ -1,0 +1,10 @@
+# Squads
+
+## Patrick
+-
+
+## Joseph
+-
+
+## Haley
+-

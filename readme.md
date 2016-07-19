@@ -1,0 +1,30 @@
+
+# ![](https://camo.githubusercontent.com/6ce15b81c1f06d716d753a61f5db22375fa684da/68747470733a2f2f67612d646173682e73332e616d617a6f6e6177732e636f6d2f70726f64756374696f6e2f6173736574732f6c6f676f2d39663838616536633963333837313639306533333238306663663535376633332e706e67) WDI 11 Syllabus
+
+## Administrative
+
+- [Calendar](generalassemb.ly_nopho7pbo44ahp3bqs7r3qv6r4@group.calendar.google.com)
+  - **Includes all lessons and homework assignments with due dates**
+- [Attendance](attendance.md)
+- [Incentives](incentives.md)
+  - Includes attendance and homework policies
+- [One-on-Ones](one-on-ones.md)
+- [Squads](squads.md)
+- [Office Hours](office-hours.md)
+
+## Communication
+
+- Slack
+  - You have been invited to two different slack teams:
+    - [DSI DC 2](https://dsidc2.slack.com) - Our primary slack team
+    - [GA DC Campus](https://gadc-campus.slack.com) - The DC alumni team
+- Tips
+  - <code>&grave;hello&grave;</code>: Backtics (the top-left of the keyboard on a Mac) makes text show up in a monospace font. Great for code.
+  - Code blocks are made with three backtics:
+    <pre>
+    &grave;&grave;&grave;
+    The backtics MUST be on a line by themselves!
+    &grave;&grave;&grave;
+    </pre>
+  - These same backtick tricks also work on **Github**.
+  - `@here`: Sends a message to everyone currently online in a Slack room
