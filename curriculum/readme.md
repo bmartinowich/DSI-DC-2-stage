@@ -1,4 +1,3 @@
----
 
 # Lesson Breakdown
 
@@ -14,9 +13,6 @@
 | Lesson 8 | [Intro to Classification](./lesson-08/readme.md)|| Lesson 18 | [Data Science Careers](./lesson-18/readme.md) |
 | Lesson 9 | [Intro to Logistic Regression](./lesson-09/readme.md) || Lesson 19 | *Flex Session |
 | Lesson 10 | [Communicating Model Results](./lesson-10/readme.md) ||Lesson 20 | Final Project Demo Day |
-
----
-
 
 
 ##Week 1 - Getting Started: Python for Data Science
