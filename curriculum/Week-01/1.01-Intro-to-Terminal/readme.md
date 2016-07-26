@@ -1,6 +1,5 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Using the Command Line
-Week 1 | Lesson 1.1
-25 min
+Week 1 | Lesson 1.1 | 25 min
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
