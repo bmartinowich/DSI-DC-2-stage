@@ -57,7 +57,7 @@ In our class, we'll be working closely with tools that utilize the Python progra
 
 2. Agree to the terms and let Anaconda go through its default installation. On OS X, there is a graphical installer.
 
-3. Just type in the package name and Anaconda will install the package and any dependencies. Anaconda should install several packages by default, including:
+3. Anaconda should install several packages by default, including:
 
   * **python**: a programming language very popular with data scientists
   * **jupyter**: an interface for creating interactive python notebooks, great for sharing analyses
@@ -67,6 +67,7 @@ In our class, we'll be working closely with tools that utilize the Python progra
   * **pip** & **setuptools**: software to manage and install python packages
   * **scikit-learn**: a toolkit for machine learning algorithms
   * **scipy** and **statsmodels**: statistical packages for python
+  * **seaborn**: plotting and basic statistical package for python
   * **sqlite**: a popular, easy to use database
 
 4. If one or more of these is missing, just select the packages in the installer, or run the following at the command line (remember, you don't need to type the `$`):
@@ -158,7 +159,7 @@ $ source ~/.bashrc
 
 ## Part 4. Homebrew
 
-We'll aslo install Homebrew, a great package management tool. To understand Homebrew's utility, it's useful to know a bit about packages and libraries.
+We'll also install Homebrew, a great package management tool. To understand Homebrew's utility, it's useful to know a bit about packages and libraries.
 
 Packages are executable bits of source code. In other words, they're kind of like an zipped/archived movie you downloaded (and I'm sure, legally) to watch. A package requires that you have necessary pre-requisites to run a given piece of software (like the right OS, other package dependencies, etc). A library is a set of files that can be used by other software programs. Much like packages, they have dependencies you need to satisfy.
 
@@ -232,7 +233,7 @@ PostgreSQL is a database, similar to MySQL, that we'll be using later in class. 
 
   ```bash
   $ sudo apt-get install postgresql postgresql-contrib postgresql-client
-  ```
+  ```a
 
 2. You need to add yourself as a user in postgres so you can access the `psql` console seamlessly. Following the commands below, replace `dsi-student` with *your own user-name* and type *your own password* when prompted. 
 
