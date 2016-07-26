@@ -213,7 +213,7 @@ Further [documentation](https://git.io/brew-docs)
 
  These identifiers will be added to your commits and show up when you push your changes to github from the command line!
 
-## Part 5. PostgreSQL
+## Part 6. PostgreSQL
 
 PostgreSQL is a database, similar to MySQL, that we'll be using later in class. Install Postgres with the following steps:
 
@@ -247,7 +247,7 @@ $ exit
 
 Test that this works by typing `psql`. You should be presented with the postgres shell. To exit type `\q`.
 
-## Part 6. Required Tools
+## Part 7. Required Tools
 
 1. We'll be using [Slack](https://slack.com/), a popular messaging platform, for our class communications.
  * Click on the [installation instructions for your platform](https://slack.com/downloads) to install the Slack desktop app. You can also sign into Slack using a web interface or via their mobile app!
@@ -264,7 +264,7 @@ Test that this works by typing `psql`. You should be presented with the postgres
  * Grab the [download](https://www.import.io/download/download-info/) and follow the installation instructions for your OS.
 
 
-## Part 7. Text Editors
+## Part 8. Text Editors
 
 A data scientist frequently writes scripts to process data, perform analysis, and create visualizations, webpages, and other end products, so you'll need a good text editor. If you don't already have a preference, try [Atom](https://atom.io/) or [Sublime](http://www.sublimetext.com/). Both editors are available for most platforms.
 
