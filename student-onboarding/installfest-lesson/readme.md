@@ -182,7 +182,7 @@ Taken from [this resource](http://computers.tutsplus.com/tutorials/homebrew-demy
 Installing is simple:
 
 ```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 Further [documentation](https://git.io/brew-docs)
