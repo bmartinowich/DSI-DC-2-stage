@@ -2,7 +2,7 @@
 
 - What to do: 
   - Go to [Project Euler](projecteuler.net)
-  - Sign in
+  - Create an account and sign in to the site
   - In the archives, complete as many Problems as possible
 
 - Workflow: 
