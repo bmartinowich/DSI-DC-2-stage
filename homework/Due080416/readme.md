@@ -1,10 +1,11 @@
-#Homework Due 8/3: 
+#Homework Due 8/4: 
 
-## Python Practice
-- Complete warm ups 1 and 2 (submit screenshot via pull request) [on codingbat.com](http://codingbat.com/python)
+## Python Practice Problems
+- Complete 4 of the 9 practice problems in the [1.09 Lab](https://github.com/ga-students/DSI-DC-2/tree/master/curriculum/Week-01/1.09-Datasets-and-Numpy-Lab)
 
-## Stats and Central Limit Theorem Review
-- This should've been completed as pre-work before starting the course, but if you haven't, please watch Lesson 14: Averages and Lesson 15: Variance
-[Intro to Stats](https://www.udacity.com/course/intro-to-statistics--st101)
-- Watch [Khan Academy Intro to Central Limit Theorem](https://www.khanacademy.org/math/probability/statistics-inferential/sampling-distribution/v/central-limit-theorem)
-- Watch [Explaining Central Limit Theorem With Bunnies and Dragons](http://blog.minitab.com/blog/michelle-paret/explaining-the-central-limit-theorem-with-bunnies-and-dragons-v2)
+## NumPy and Arrays Practice
+- Complete 8 or more activities from the [100 Numpy Exercises Kit](https://github.com/rougier/numpy-100/blob/master/100%20Numpy%20exercises%20no%20solution.md)
+
+## Submission
+- Put all your code as clearly labeled python files or ipython notebook(s) into a folder with your name in THIS folder in your LOCAL repository
+- Push that folder to your remote repository, and submit to the main repo via a pull request
