@@ -1,16 +1,8 @@
----
-title: Plotting Lab
-type: lab
-duration: "1:5"
-creator:
-    name: Lucy Williams
-    city: DC
----
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Plotting Lab
 
 ## Introduction
-At the beginning of the week, you were given an overview of Project 1.
+Now that you've learned some plotting techniques - let's practice them!
 
 #### Requirements
 
@@ -28,7 +20,7 @@ At the beginning of the week, you were given an overview of Project 1.
 
 
 **Bonus:**
-- Use seaborn and/or plotly to do EDA on Project 1
+- Use seaborn and/or plotly to do EDA.
 
 #### Deliverable
 
