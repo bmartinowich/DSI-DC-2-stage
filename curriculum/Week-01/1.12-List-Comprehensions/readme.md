@@ -1,11 +1,3 @@
----
-title: Python List Comprehensions
-duration: "1:30"
-creator:
-    name: Kiefer Katovich
-    city: DC
----
-
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Python List Comprehensions
 Week 1 | Lesson 5.3
 
