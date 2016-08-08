@@ -4,3 +4,4 @@ https://github.com/ga-students/DSI-DC-2/blob/master/curriculum/Week-02/1.02%20Sc
 
 ## Starter Code!
 
+https://github.com/ga-students/DSI-DC-2/blob/master/curriculum/Week-02/1.02%20Scipy%20Stats%20Lab/stats-lab-code.ipynb
