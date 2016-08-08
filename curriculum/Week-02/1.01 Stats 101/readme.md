@@ -8,4 +8,4 @@ Available via this [link](https://github.com/ga-students/DSI-DC-2/blob/master/cu
 
 [Normality](https://github.com/ga-students/DSI-DC-2/blob/master/curriculum/Week-02/1.01%20Stats%20101/normality.ipynb)
 
-
+[Stats Guided Practice](https://github.com/ga-students/DSI-DC-2/blob/master/curriculum/Week-02/1.01%20Stats%20101/stats-guided-practice.ipynb)
