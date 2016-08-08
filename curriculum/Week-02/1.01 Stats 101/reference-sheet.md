@@ -33,8 +33,6 @@
 <a name="opening"></a>
 ## Opening (5 min)
 
-> Instructor Note: Review Prior Lesson Content & Exit Tickets. Discuss Current Objectives.
-
 <a name="introduction"></a>
 ## Intro: Laying the ground work (20 mins)
 
@@ -224,28 +222,9 @@ Kurtosis is a measure of whether the data are peaked or flat relative to a norma
 <a name="guidedpractice2"></a>
 ## Guided Practice: Is this skewed? (10 mins)
 
-> Instructor Note: Walk through images of normal, skewed, sigmoid (etc) distributions. Stand up and vote on the types. After each image, discuss methods of correcting the issue. Use your own work or review [the sample images from the asset folder](./assets/images/).
-
 For example:
 
 - Skewed? Discuss centering on the mean or median
 - Not smooth? Log transformations
 - Sigmodial? That's a feature- use logistic regression!
 
-<a name="introduction3"></a>
-## Variable Types (5 min)
-
-1. Continuous: Continuous variables are things such as: height, income, etc.
-2. Categorical: Categorical variables are things such as: race, gender, paint colors, movie titles, etc
-
-We'll discuss these in future lessons.
-
-
-
-### BEFORE NEXT CLASS
-|   |   |
-|---|---|
-| **PROJECT 2** | [Unit Project 2](../../projects/unit-projects/project-2/readme.md)   |
-
-### ADDITIONAL RESOURCES
-- If any
