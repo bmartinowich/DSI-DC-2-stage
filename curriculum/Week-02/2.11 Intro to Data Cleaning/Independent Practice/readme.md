@@ -1,13 +1,4 @@
----
-title: Data Cleaning
-type: Morning exercise
-duration: "1:00"
----
-
-
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data cleaning exercise
-Week 2 | Exercise 3.0
-
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data Cleaning Independent Practice
 ---
 
 Obtain the [Sleep alone dataset](./assets/dataset/sleeping-alone-data.csv), which contains a survey about couples who sleep alone.
