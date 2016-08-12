@@ -68,6 +68,17 @@ This data, taken from the College Board, gives the mean SAT math and verbal scor
 
 ---
 
+### Presentation Structure
+
+- 5 minutes
+- Powerpoint or other visual aid
+- Guiding question/Big idea
+- Procedure/methodology (high level, no need to show code unless you found a useful method to share)
+- Findings/Answers to prompts (include visuals)
+- Conclusion - next steps, further questions, what you would do with more time
+
+---
+
 ### Project Feedback + Evaluation
 
 [Attached here is a complete rubric for this project.](./project-01-rubric.md)
