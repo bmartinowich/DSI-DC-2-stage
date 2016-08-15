@@ -26,6 +26,8 @@ Week 3 | Lesson 1.3
 > This lesson will be heavily code-driven since we're introducing how to use
 two new modules.
 
+Access the [starter-code](https://github.com/ga-students/DSI-DC-2/blob/master/curriculum/Week-03/3.03-linear-regression-sklearn-statsmodels/starter-code.ipynb).
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
