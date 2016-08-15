@@ -64,8 +64,6 @@ in each case to get a good fit.
 
 Make a plot of the true values and predicted values of your best model.
 
-![Example Image](assets/images/deliverables.png)
-
 ## Additional Resources
 
 - [Online Stat Notebook](http://onlinestatbook.com/2/regression/intro.html)
