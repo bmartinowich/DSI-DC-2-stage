@@ -19,7 +19,7 @@ Sacramento, CA.
 ## Exercise
 
 > This should be the most individual activity of the session; pairs or small groups
-should be fine. This is time for students to solidify their newly gained knowledge.
+should be fine (though everyone must submit). This is time for you to solidify your newly gained knowledge.
 
 Our clients were really happy with our earlier work predicting housing values! Now
 they'd like us to apply our linear regression skills with a new dataset of
