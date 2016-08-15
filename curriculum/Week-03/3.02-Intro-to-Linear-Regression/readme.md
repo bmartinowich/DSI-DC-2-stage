@@ -1,4 +1,3 @@
-
 ---
 title: Intro to Modeling: Linear Regression
 duration: "1:25"
