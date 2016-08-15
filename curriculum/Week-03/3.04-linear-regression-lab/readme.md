@@ -13,7 +13,7 @@ creator:
 
 > ***Note:*** _This can be a pair programming activity or done independently._
 
-In this lab we'll be working with [housing data](https://trello-attachments.s3.amazonaws.com/5679b2e91535c674fadb2efe/56b39dbfc8bbe91b11d49e9f/bb26a8e51e1bb392f94c7d7f045b875c/Sacramentorealestatetransactions.csv) from
+In this lab we'll be working with [housing data](https://github.com/ga-students/DSI-DC-2/blob/master/curriculum/Week-03/3.04-linear-regression-lab/Sacramentorealestatetransactions.csv) from
 Sacramento, CA.
 
 ## Exercise
