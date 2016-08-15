@@ -212,4 +212,6 @@ Compute the best fit line using the equations we discussed.
 - [Simple Linear Regression](https://en.wikipedia.org/wiki/Simple_linear_regression)
 - [Khan Academy Example](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/residuals-least-squares-rsquared/v/regression-line-example)
 - This [Duke Guide](http://people.duke.edu/~rnau/regintro.htm) is an excellent, in-depth reference guide
+- Check out White's [paper](http://www.jstor.org/stable/1912934?origin=crossref&seq=1#page_scan_tab_contents) on hetereoskedastic error
+- Wikipedia on [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error). Remember! Mean squared error is to 
 
