@@ -1,3 +1,4 @@
+
 ---
 title: Intro to Modeling: Linear Regression
 duration: "1:25"
@@ -211,4 +212,5 @@ Compute the best fit line using the equations we discussed.
 
 - [Simple Linear Regression](https://en.wikipedia.org/wiki/Simple_linear_regression)
 - [Khan Academy Example](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/residuals-least-squares-rsquared/v/regression-line-example)
+- This [Duke Guide](http://people.duke.edu/~rnau/regintro.htm) is an excellent, in-depth reference guide
 
