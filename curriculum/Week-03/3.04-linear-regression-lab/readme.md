@@ -26,7 +26,7 @@ they'd like us to apply our linear regression skills with a new dataset of
 properties from Sacramento. This time the dataset is a bit different so we'll
 need to explore the dataset and fit new models to make predictions of prices.
 
-To get started, download the [starter code](),
+To get started, download the [starter code](https://github.com/ga-students/DSI-DC-2/blob/master/curriculum/Week-03/3.04-linear-regression-lab/linear-regression-lab.ipynb),
 load the data into a Pandas dataframe and explore the variables.
 
 #### Requirements
@@ -47,7 +47,7 @@ Which ones?
 
 #### Starter code
 
-You can find the [Starter Code here]().
+You can find the [Starter Code here](https://github.com/ga-students/DSI-DC-2/blob/master/curriculum/Week-03/3.04-linear-regression-lab/linear-regression-lab.ipynb).
 
 * First familiarize yourself with the individual variables (columns) and their
 relationships, making plots as needed with pandas, matplotlib, or seaborn
