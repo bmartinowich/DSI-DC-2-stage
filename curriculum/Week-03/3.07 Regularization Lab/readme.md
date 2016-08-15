@@ -1,11 +1,3 @@
----
-title: Regularization Lab
-type: lab
-duration: "1:25"
-creator:
-    name: Marc Harper
-    city: LA
----
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Regularization Lab
 
@@ -40,8 +32,6 @@ Bonus exercises:
 #### Starter code
 
 When you are ready to get started, download the Jupyter notebook here: [Starter Code](./code/starter-code/Regularization-Lab-Starter.ipynb)
-
-> [Solution Code](./code/solution-code/Regularization-Lab-Solution.ipynb)
 
 #### Deliverable
 
