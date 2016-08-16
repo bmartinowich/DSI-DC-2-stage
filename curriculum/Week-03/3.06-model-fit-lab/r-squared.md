@@ -22,7 +22,7 @@ Now, we're so close to finding our r-squared figure. But we have to do one thing
 
 # ![](./img_4.jpg)
 
-## Interpreting R-Squared
+## Interpreting R-squared
 
 Let's interpret this a bit. If our model has a mean squared error of zero, we're saying our model correctly measures ALL the variance in y. Indeed, in this case, our r-squared is one because the numerator of our calculation is zero. When we subtract this fraction (0 divided by any variance y is going to be 0) from 1, we find an r-squared of 1. A-hah!
 
