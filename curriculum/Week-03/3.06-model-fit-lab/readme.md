@@ -36,3 +36,4 @@ Take a look at the [starter code](https://github.com/ga-students/DSI-DC-2/blob/m
 
 - [Interpreting r-squared](http://blog.minitab.com/blog/adventures-in-statistics/regression-analysis-how-do-i-interpret-r-squared-and-assess-the-goodness-of-fit)
 - Hilarious graphs that prove that [correlation is not causation](http://www.tylervigen.com/spurious-correlations)
+- Sal's (Khan Academy) [explanation](https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data/residuals-least-squares-rsquared/v/r-squared-or-coefficient-of-determination) of r-squared is excellent
