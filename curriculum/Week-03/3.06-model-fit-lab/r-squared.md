@@ -24,7 +24,7 @@ Now, we're so close to finding our r-squared figure. But we have to do one thing
 
 ## Interpreting R-squared
 
-Let's interpret this a bit. If our model has a mean squared error of zero, we're saying our model correctly measures ALL the variance in y. Indeed, in this case, our r-squared is one because the numerator of our calculation is zero. When we subtract this fraction (0 divided by any variance y is going to be 0) from 1, we find an r-squared of 1. A-hah!
+Let's interpret this a bit. If our model has a mean squared error of zero, we're saying our model correctly measures ALL the variance in y. Our residuals equal zero. All points fall on the line. Indeed, in this case, our r-squared is one because the numerator of our calculation is zero. When we subtract this fraction (0 divided by any variance y is going to be 0) from 1, we find an r-squared of 1. A-hah!
 
 Does that mean a high r-squared is always better? Not necessarily! In fact, we may be systemically producing an overfit, biased model. If our model hits every single point in our dataset, the MSE drops to zero. However, our error due to variance will become excessively large. (Refer to the bias/variance tradeoff).
 
