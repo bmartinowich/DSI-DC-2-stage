@@ -8,6 +8,7 @@ By the end of this lession, you should be able to:
 
 # PPT Notes
 
+https://github.com/ga-students/DSI-DC-2/blob/master/curriculum/Week-03/3.05-bias-variance-tradeoff/Bias-Variance%20Tradeoff.pdf
 
 # Key PPT Takeaways
 * Bias is error due to the difference between the correct model and our predicted value
