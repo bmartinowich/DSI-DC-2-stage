@@ -25,7 +25,7 @@ In this lab we'll learn about a new measure of model fit called the coefficient 
 
 #### Starter code
 
-Take a look at the [starter code]() as soon as you are ready.
+Take a look at the [starter code](https://github.com/ga-students/DSI-DC-2/blob/master/curriculum/Week-03/3.06-model-fit-lab/starter-code.ipynb) as soon as you are ready.
 
 #### Deliverable
 
