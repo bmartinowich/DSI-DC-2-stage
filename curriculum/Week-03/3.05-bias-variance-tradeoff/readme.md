@@ -72,7 +72,7 @@ plt.show()
 
 
 * Scott Foreman-Roe's [take on the bias-variance tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html) is a classic. Read it.
-* One of my favorite [lectures](https://www.youtube.com/watch?v=zrEyxfl2-a8) on the Bias Variance Trade-off
+* One of my favorite [lectures](https://www.youtube.com/watch?v=zrEyxfl2-a8) on the bias variance trade-off
 * Play with [different degress](http://arachnoid.com/polysolve/) of fitting a polynomial
 * SKLearn's [bias-variance tutorial](http://www.astroml.org/sklearn_tutorial/practical.html) is strong
 * A mathematical [deeper dive](https://courses.cs.washington.edu/courses/cse546/12wi/slides/cse546wi12LinearRegression.pdf) on linear regression and the bias variance tradeoff from UW
