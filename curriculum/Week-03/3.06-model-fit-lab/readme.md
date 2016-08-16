@@ -29,7 +29,7 @@ Take a look at the [starter code](https://github.com/ga-students/DSI-DC-2/blob/m
 
 #### Deliverable
 
-* A completed Jupyter notebook
+* A completed Jupyter notebook... Or your best shot :)
 
 
 ## Additional Resources
