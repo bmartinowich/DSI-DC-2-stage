@@ -19,4 +19,11 @@ This serves two useful purposes:
 - we have some remaining data to evaluate our model.
 
 While it may seem like a relatively simple idea, there are some caveats to putting it into practice. For example, if you are not careful it is easy to take a non-random split. Suppose we have salary data on technical professionals that is composed 80% of data from California and 20% elsewhere and is sorted by state. If we split our data into 80% training data and 20% testing data we ight inadvertantly select all the California data to train and all the non-California data to test. In this case we've still overfit on our data set because we did not sufficiently randomize the data.
+
 In a situation like this we can use k-fold cross validation, which is the same idea applied to more than two subsets. In particular, we partition our data into k subsets and train on k−1 one of them. holding the last slice for testing. We can do this for each of the possible k−1 subsets.
+
+## Resources
+
+- This [lecture](https://www.youtube.com/watch?v=_2ij6eaaSl0) does a nice walkthrough of how cross validation approaches help solve the bias-variance tradeoff
+- A [blog post](http://www.win-vector.com/blog/2015/01/random-testtrain-split-is-not-always-enough/) explains why train, test split still has its limitations
+- The [Wikipedia page](https://en.wikipedia.org/wiki/Cross-validation_(statistics) for cross validation.
