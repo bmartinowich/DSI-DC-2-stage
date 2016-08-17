@@ -1,6 +1,10 @@
 ## PPT
 
+The [deck](https://github.com/ga-students/DSI-DC-2/blob/master/curriculum/Week-03/3.09-train-test-split-cv/Model%20Evaluation.pdf) is here.
+
 ## Code
+
+The [starter code](https://github.com/ga-students/DSI-DC-2/blob/master/curriculum/Week-03/3.09-train-test-split-cv/starter-code.py) is here.
 
 ## Conclusion
 
