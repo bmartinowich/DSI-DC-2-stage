@@ -6,6 +6,8 @@ The [deck is here.](https://github.com/ga-students/DSI-DC-2/blob/master/curricul
 
 The [starter code is here.](https://github.com/ga-students/DSI-DC-2/blob/master/curriculum/Week-03/3.09-train-test-split-cv/starter-code.py)
 
+An example of how to do a train, test split with just 50% of the data (no cross validation) is available [here.](https://github.com/ga-students/DSI-DC-2/blob/master/curriculum/Week-03/3.09-train-test-split-cv/solution-code.py)
+
 ## Conclusion
 
 We've discussed overfitting in the context of bias and variance, and we've seen some techniques like regularization that are used to avoid overfitting. In this lesson we'll discuss another method for avoid overfitting that is commonly referred to a the train/test split. The idea is very similar to cross-validation (indeed it is a type of cross-validation) in that we split the dataset into two subsets:
