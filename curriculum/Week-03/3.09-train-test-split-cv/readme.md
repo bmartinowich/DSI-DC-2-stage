@@ -26,4 +26,4 @@ In a situation like this we can use k-fold cross validation, which is the same i
 
 - This [lecture](https://www.youtube.com/watch?v=_2ij6eaaSl0) does a nice walkthrough of how cross validation approaches help solve the bias-variance tradeoff
 - A [blog post](http://www.win-vector.com/blog/2015/01/random-testtrain-split-is-not-always-enough/) explains why train, test split still has its limitations
-- The [Wikipedia page](https://en.wikipedia.org/wiki/Cross-validation_(statistics) for cross validation.
+- The [Wikipedia page](https://en.wikipedia.org/wiki/Cross-validation_(statistics)) for cross validation.
