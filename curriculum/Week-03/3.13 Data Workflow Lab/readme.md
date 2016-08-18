@@ -32,7 +32,7 @@ Here are some questions to keep in mind:
 
 - What operational factors are most directly correlated to delays?
 - Take a look at airports groupings - are there any relationships by region? Size?
-- 
+
 For more instructions, follow the questions included in the starter code.
 
 
