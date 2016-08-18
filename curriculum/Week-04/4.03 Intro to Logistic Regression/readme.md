@@ -1,10 +1,3 @@
----
-title: Introduction to Logistic Regression
-duration: "1:25"
-creator:
- name: Faith / Jon
- city: DC / ATL
----
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Introduction to Logistic Regression
 Week 4 | Lesson 2.1
