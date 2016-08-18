@@ -1,10 +1,4 @@
----
-title: Feature Selection
-duration: "1:25"
-creator:
-    name: Francesco Mosconi
-    city: SF
----
+
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
