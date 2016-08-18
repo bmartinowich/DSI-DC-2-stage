@@ -51,7 +51,7 @@ You'll also want to do:
 
 #### Starter code
 
-Grab the starter code [here](/starter.ipynb)
+Grab the starter code from the "code" folder.
 
 
 #### Deliverable
