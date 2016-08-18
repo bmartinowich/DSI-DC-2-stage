@@ -1,29 +1,11 @@
----
-title: Data Workflow Lab 1: Cleaning
-type: lab
-duration: "1:25"
-creator:
-    name: Marc Harper
-    city: LA
----
-
-> #### *Guiding Questions When Using This Template*
->
-> - [ ] Are the requirements actionable?
-> - [ ] What will students have to do to prepare for this lab?
-> - [ ] Is this intended to be a group activity? Demo? Pair programming?
-> - [ ] Can students practice pseudo-coding before beginning?
-> - [ ] Is there a clear deliverable? Have you provided a screenshot for students to reference?
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Title of the Lab
 
 ## Introduction
 
-> This lab should be mostly independent since it's the basis of each student's Project 3. It's fine for students to discuss and help each other.
+In this lab we'll begin cleaning and transforming our dataset for Project 2. Recall your lessons on pandas from last week and utilize these skills throughout. The dataset is a list of transactions for alcohol sales in Iowa for the years 2015 and Q1 2016.
 
-In this lab we'll begin cleaning and transforming our dataset for Project 3. Recall your lessons on pandas from last week and utilize these skills throughout. The dataset is a list of transactions for alcohol sales in Iowa for the years 2015 and Q1 2016.
-
-Before you start, think about the scenarios for Project 3 and form a preliminary plan to work with the data and produce analytic conclusions for the relevant stakeholders. Try to anticipate what questions the stakeholders will ask and be prepared to answer.
+Before you start, think about the scenarios for Project 2 and form a preliminary plan to work with the data and produce analytic conclusions for the relevant stakeholders. Try to anticipate what questions the stakeholders will ask and be prepared to answer.
 
 ## Exercise
 
@@ -57,6 +39,13 @@ such as zip code, county number, city, etc. We recommend that you spend some
 time thinking about the model you may want to fit and computing enough of the
 suggested quantities to give you a few options.
 
+You'll also want to do: 
+- Exploratory data analysis
+- Generate correlation matrix of the features
+- Generate linear regression models
+- Optimize your model
+
+
 Bonus tasks:
 * Restrict your attention to stores that were open for all of 2015 and Q1 2016.
 Stores that opened or closed in 2015 will introduce outliers into your data.
@@ -76,7 +65,7 @@ Grab the starter code [here](code/starter-code/3.3-Data-Workflow-Lab-1.ipynb)
 
 #### Deliverable
 
-You should have a cleaned dataset at the end of the lab ready for modelling.
+You should have a completed model
 
 ![Example Image](https://cloud.githubusercontent.com/assets/25366/8370438/dd651c2c-1b7c-11e5-8638-c99e2f6c7c61.png)
 
