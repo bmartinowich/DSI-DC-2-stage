@@ -16,12 +16,6 @@ Week 4 | Lesson 2.1
 - Recall metrics for accuracy and misclassification
 - Understand odds and odds ratios, and contrast to probability
 
-
-### INSTRUCTOR PREP
-*Before this lesson, instructors will need to:*
-- Send math and additional resources on odds and logit models for read-ahead
-- Complete prep work
-
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
@@ -32,12 +26,6 @@ Week 4 | Lesson 2.1
 | 5 min  | [Conclusion](#conclusion)  | Review/Recap  |
 
 ---
-
-<a name="opening"></a>
-## Opening (5 mins)
-
-> Review objectives and prior materials.
-
 <a name="introduction"></a>
 ## Introduction:Logistic Regression  (10 mins)
 
@@ -213,12 +201,6 @@ Use the Breast Cancer Dataset to perform Logistic Regression. We aim to use tumo
 
 - What does the summary table tell us?
 - What do AIC and BIC tell us? What are their benefits?
-
-
-<a name="conclusion"></a>
-## Conclusion (5 mins)
-- Review independent practice deliverable(s)
-- Recap topic(s) covered
 
 ### ADDITIONAL RESOURCES
 - [Logistic Regression Video Walkthrough](https://www.youtube.com/watch?v=zAULhNrnuL4&noredirect=1)
