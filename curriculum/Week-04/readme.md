@@ -8,9 +8,9 @@ Session Time | Day 1 | Day 2 | Day 3 | Day 4 | Day 5
  --- | --- | --- | --- | ---  | ---
 9-10 | [Breakfast Hour][4-1A]            | [Breakfast Hour][4-2A]             | [Breakfast Hour][4-3A]                        | [Breakfast Hour][4-4A]          | [Breakfast Hour][4-5A]
 10:00-11:30 | [Intro to Classification][4-1B] | [Evaluating Model Fit for Classifiers][4-2B] | [Regularization Review][4-3B] | [Capstone Presentations][4-4B] | [Visualization Classification][4-5B]
-11:30-1 | [Classification Lab][4-1C]         | [Logistic Regression Lab][4-2C]      | [Plotting Classification Lab][4-3C]       | [Sklearn & Project 4][4-4C]       | [Prepare Visuals][4-5C]
-2-3:30 | [Intro to Logistic Regression][4-1D]         | [Evaluating Model Fit][4-2D]         | [Project 4: Workshop][4-3D]               | [Regularization Lab][4-4D]        | [Project 4: Workshop][4-5D]
-3:30 | [Logistic Regression Lab][4-1E]          | [Model Tuning Lab][4-2E]             | [Intro to Project Capstone, Pt 1][4-3E]   | [Project 4: Workshop][4-4E]       | [Project 4: Presentations][4-5E]
+11:30-1 | [Classification Lab][4-1C]         | [Model Tuning Lab][4-2C]      | [][4-3C]       | [Communicating Results][4-4C]       | [Visualization Lab][4-5C]
+2-3:30 | [Intro to Logistic Regression][4-1D]         | [Advanced Model Evaluation][4-2D]         | [Feature Selection Lab][4-3D]               | [Resumes and Social Media][4-4D]        | [Project 2 Presentations][4-5D]
+3:30 | [Logistic Regression Lab][4-1E]          | [Gridsearch Lab][4-2E]             | [][4-3E]   | [][4-4E]       | [][4-5E]
 
 
 [4-1A]: ./instructor-contributions/
