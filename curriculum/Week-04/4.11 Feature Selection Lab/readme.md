@@ -22,7 +22,7 @@ In this lab we will improve upon the analysis of the titanic dataset, performing
 #### Starter code
 
 [Starter code](code/starter-code/starter-code-4_2.ipynb)
->[Solution code](code/solution-code/solution-code-4_2.ipynb)
+
 
 #### Deliverable
 
