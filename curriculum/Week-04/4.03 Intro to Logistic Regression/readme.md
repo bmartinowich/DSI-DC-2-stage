@@ -15,6 +15,7 @@
 - Interpret linear model coefficients
 - Recall metrics for accuracy and misclassification
 - Understand odds and odds ratios, and contrast to probability
+
 ---
 <a name="introduction"></a>
 ## Introduction:Logistic Regression  (10 mins)
