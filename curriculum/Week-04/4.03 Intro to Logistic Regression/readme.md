@@ -1,6 +1,6 @@
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Introduction to Logistic Regression
-Week 4 | Lesson 2.1
+
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -15,16 +15,6 @@ Week 4 | Lesson 2.1
 - Interpret linear model coefficients
 - Recall metrics for accuracy and misclassification
 - Understand odds and odds ratios, and contrast to probability
-
-### LESSON GUIDE
-| TIMING  | TYPE  | TOPIC  |
-|:-:|---|---|
-| 5 min  | [Opening](#opening)  | Discussion  |
-| 10 min  | [Introduction](#introduction)   | Introduction to Logistic Regression |
-| 25 min  | [Guided Practice](#guided-practice)  |  The math behind Logistic Regression |
-| 40 min  | [Independent Practice](#ind-practice)  | Use statsmodels to run Logistic on the project 4 dataset |
-| 5 min  | [Conclusion](#conclusion)  | Review/Recap  |
-
 ---
 <a name="introduction"></a>
 ## Introduction:Logistic Regression  (10 mins)
@@ -132,16 +122,6 @@ Obviously I skipped some math steps there, but this is the equation representing
 This allows us to solve the regression allowing the beta coefficients to have any value, but guarantees that the predicted value for Y will be a probability that falls within the range 0 to 1.
 
 
-## Recap & Review
-
-Check: What is Logistic regression?
-
-> A: A statistical method for analyzing a dataset in which there are one or more independent variables that determine an outcome. The outcome is measured with a variable (in which there are only two possible outcomes).
-
-Check: What is important about the dependent variable for logistic regression?
-
-> A: The dependent variable is binary, i.e. it only contains data coded as 1 (TRUE, success, pregnant, etc. ) or 0 (FALSE, failure, non-pregnant, etc.).
-
 #### Goals of Logistic Regression
 
 The goal of logistic regression is to find the best fitting model to describe the relationship between the characteristic of interest (dependent variable = response or outcome variable) and a set of independent (predictor or explanatory) variables. Logistic regression generates the coefficients (and its standard errors and significance levels) of a formula to predict a logit transformation of the probability of presence of the characteristic of interest:
@@ -187,20 +167,6 @@ logit = sm.Logit(data["admit"], data[train_cols])
 result = logit.fit()
 result.summary2()
 ```
-
-**Check: Understanding of dummy variables and summary table.**
-
-
-<a name="ind-practice"></a>
-## Independent Practice: Logistic Regression Implementation
-
-Let's check out the [Starter Code](./code/starter-code/week4-2.1-starter-code.ipynb):
-
-
-Use the Breast Cancer Dataset to perform Logistic Regression. We aim to use tumor characteristics (features) to determine likelihood of the tumor being malignant (M) or benign (B).
-
-- What does the summary table tell us?
-- What do AIC and BIC tell us? What are their benefits?
 
 ### ADDITIONAL RESOURCES
 - [Logistic Regression Video Walkthrough](https://www.youtube.com/watch?v=zAULhNrnuL4&noredirect=1)
