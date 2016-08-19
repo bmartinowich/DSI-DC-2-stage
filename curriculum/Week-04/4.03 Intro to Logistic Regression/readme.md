@@ -139,35 +139,8 @@ and
 
 Logistic Regression is quite simple. Specify the column containing the variable you're trying to predict followed by the columns that the model should use to make the prediction.
 
-In our case we'll be predicting the admit column using gre, gpa, and the prestige dummy variables prestige_2, prestige_3 and prestige_4. We're going to treat prestige_1 as our baseline and exclude it from our fit. This is done to prevent multicollinearity, or the dummy variable trap caused by including a dummy variable for every single category.
-
-
-<a name="guided-practice"></a>
-## Guided Practice: Topic (25 mins)
-
-Use the following Python code to demonstrate Logistic Regression.
-
-```python
-import statsmodels.api as sm
-import pandas as pd
-import pylab as pl
-import numpy as np
-
-df = pd.read_csv("http://www.ats.ucla.edu/stat/data/binary.csv")
-df.columns = list(df.columns)[:3] + ["prestige"]
-
-dummy_ranks = pd.get_dummies(df["prestige"], prefix="prestige")
-cols_to_keep = ["admit", "gre", "gpa"]
-data = df[cols_to_keep].join(dummy_ranks.ix[:, "prestige_2":])
-data["intercept"] = 1.0
-train_cols = data.columns[1:]
-
-logit = sm.Logit(data["admit"], data[train_cols])
-
-result = logit.fit()
-result.summary2()
-```
-
 ### ADDITIONAL RESOURCES
 - [Logistic Regression Video Walkthrough](https://www.youtube.com/watch?v=zAULhNrnuL4&noredirect=1)
-- [More information on breast cancer data](https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.names)
+- [Andrew Ng's video on Logistic Regression](https://www.youtube.com/watch?v=LLx4diIP83I)
+- [An additional example of logistic regression by yours truly](https://github.com/pdsmith1223/Data_Science_Instruction/blob/master/Logistic%20Regression%20Example.ipynb)
+- [Yet another example of logistic regression by Kevin Markham](http://nbviewer.jupyter.org/gist/justmarkham/6d5c061ca5aee67c4316471f8c2ae976)
