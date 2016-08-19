@@ -18,7 +18,7 @@
 
 ---
 <a name="introduction"></a>
-## Introduction:Logistic Regression  (10 mins)
+## Introduction to Logistic Regression 
 
 Logistic Regression is a linear approach to solving a classification problem. That is, we can use a linear model, similar to Linear Regression, in order so solve if an item belongs or does not belong to a class label.
 
