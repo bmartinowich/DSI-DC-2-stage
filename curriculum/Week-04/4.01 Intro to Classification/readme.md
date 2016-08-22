@@ -6,6 +6,7 @@ https://github.com/ga-students/DSI-DC-2/blob/master/curriculum/Week-04/4.01%2520
 
 SKLearn: https://github.com/ga-students/DSI-DC-2/blob/master/curriculum/Week-04/4.01%20Intro%20to%20Classification/classification-methods.py
 Our example:
+https://github.com/ga-students/DSI-DC-2/blob/master/curriculum/Week-04/4.01%20Intro%20to%20Classification/intro-to-classification.py
 
 ## Resources
 
