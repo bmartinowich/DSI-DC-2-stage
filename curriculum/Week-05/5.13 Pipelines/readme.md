@@ -1,13 +1,4 @@
----
-title: Pipelines and Custom Transformers in SKLearn
-duration: "1:25"
-creator:
-    name: Francesco Mosconi
-    city: SF
----
-
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Pipelines and custom transfomers in SKLearn
-Week 5 | Lesson 2.2
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -15,18 +6,6 @@ Week 5 | Lesson 2.2
 - Use pipelines to preprocess data from the SQL database
 - Use pipeline in combination with classification
 - Create a custom transformer using the `TransformerMixin` class
-
-### STUDENT PRE-WORK
-*Before this lesson, you should already be able to:*
-- Extract data from a database
-- Perform classification
-
-### INSTRUCTOR PREP
-*Before this lesson, instructors will need to:*
-- Read in / Review any dataset(s) & starter/solution code
-- Generate a brief slide deck
-- Prepare any specific materials
-- Provide students with additional resources
 
 ### LESSON GUIDE
 
@@ -42,19 +21,17 @@ Week 5 | Lesson 2.2
 
 
 <a name="opening"></a>
-## Opening (5 mins)
+## Opening 
 **Data pipelines** are a series of automated data transformations that ensure the validity of your work for routine data maintenance tasks. Many organizations rely on data engineering teams to encode common tasks into pipelines.
 
 <a name="introduction"></a>
-## Data Pipelines (10 mins)
+## Data Pipelines 
 
 The term _pipeline_ is used to indicate a series of concatenated data transformations. Each stage of a pipeline feeds from the previous stage, i.e. the output of a stage is plugged into the input of the next stage and data flows through the pipeline from beginning to end just as water flows through a pipeline.
 
 ![Pipeline](./assets/images/pipeline.png)
 
 Each processing stage has an input, where data comes in, and an output, where processed data comes out.
-
-**Check:** Ask the students to give some examples of data transformations.
 
 > Examples of data transformations:
 > - change in units (lbs -> kg)
@@ -69,7 +46,7 @@ Each processing stage has an input, where data comes in, and an output, where pr
 Pipelines provide a higher level of abstraction than the individual building blocks of a data science process and are a great way to organize analyses.
 
 <a name="demo"></a>
-## Pipelines in scikit-learn (25 mins)
+## Pipelines in scikit-learn 
 Pipelines improve coding and model management in `scikit-learn`. These tie together all the steps that you may need to prepare your dataset and make your predictions. Because you will need to perform all of the exact same transformations on your evaluation data, encoding the exact steps is important for reproducibility and consistency.
 
 
@@ -201,9 +178,6 @@ vectorizer.transform(['IBM Sees Holographic Air']).todense()
 
 
 
-**Check**: What is the meaning of the various parameters used at initialization of the Vectorizer?
-
-
 Let's use the vectorizer to fit all the titles and build a feature matrix.
 
 
@@ -285,7 +259,6 @@ pipeline.predict_proba(X_new)
 
 
 
-**Check**: Add a `MaxAbsScaler` scaling step to the pipeline, which should occur after the vectorization.
 
 #### Merging Feature Sets in Pipelines
 
@@ -301,7 +274,7 @@ Many data science teams rely on software tools to manage these ETL pipelines. If
 - An alternative is [Airflow](https://github.com/airbnb/airflow) by AirBnB.
 
 <a name="guided-practice"></a>
-## `make_pipeline` and the preprocessing module (15 mins)
+## `make_pipeline` and the preprocessing module
 
 #### make_pipeline
 Scikit-learn pipelines can also be built using the `make_pipeline` command.
@@ -381,7 +354,7 @@ Label Manipulators
 - MultiLabelBinarizer
 
 <a name="demo_2"></a>
-## Custom Transformers (10 minutes)
+## Custom Transformers 
 
 We can implement custom transformers by extending the BaseClass in Scikit-Learn.
 
@@ -424,14 +397,10 @@ fm.transform(test)
 
 
 
-**Check**: Compare this with the `FunctionTransformer` from the preprocessing module.
-
-**Check**: Implement a custom transformer that selects a specific feature from a Pandas dataframe. It should be initialized with the column name or the column index and it should return the selected column when transforming a dataframe.
 
 <a name="ind-practice"></a>
-## Putting it all together (20 minutes)
+## Putting it all together 
 
-**Check**: Revisit the dataset of lab 1.4. How could you use `make_pipeline` and `make_union` to build a pipeline that performs the same steps all in one pass?
 
 > Answer: you will have to build something like this:
 >
@@ -448,7 +417,7 @@ A good practice for instructor is to have students work in this way:
 - if different features are treated differently, have students figure out how to recombine them (Feature Union)
 
 <a name="conclusion"></a>
-## Conclusion (5 mins)
+## Conclusion 
 We learned how to use the `Pipeline` construct in order to chain several instructions in one single object. This enables to treat data-processing from a more abstract and more powerful perspective, and it's a pre-cursor to the work we will do when working with Big Data technologies.
 
 ***
