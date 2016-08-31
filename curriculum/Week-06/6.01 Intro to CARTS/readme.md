@@ -183,24 +183,36 @@ At each node calculate the variance of the data points at that node, then choose
 In a regression tree the idea is this: since the target variable does not have classes, we fit a regression model to the target variable using each of the independent variables. Then for each independent variable, the data is split at several split points. At each split point, the "error" between the predicted value and the actual values is squared to get a sum of squared errors (SSE). The split point errors across the variables are compared and the variable/point yielding the lowest SSE is chosen as the root node/split point. This process is recursively continued.
 
 <a name="guided-practice"></a>
-## Guided Practice: Decision trees pros and cons (10 mins)
+## CART Advantages and Disadvantages
 
-What do you think are the main advantages / disadvantages of decision trees? Discuss in pairs and then let's share.
+### CART Advantages
 
-> Answer (from [wikipedia](https://en.wikipedia.org/wiki/Decision_tree_learning)):
-- Advantages:
-    - Simple to understand and interpret. People are able to understand decision tree models after a brief explanation. => useful to work with non technical departments (marketing/sales).
-    - Requires little data preparation. Other techniques often require data normalization, dummy variables need to be created and blank values to be removed.
-    - Able to handle both numerical and categorical data. Other techniques are usually specialized in analyzing datasets that have only one type of variable.
-    - Uses a white box model. If a given situation is observable in a model the explanation for the condition is easily explained by boolean logic. By contrast, in a black box model, the explanation for the results is typically difficult to understand, for example with an artificial neural network.
-    - Possible to validate a model using statistical tests. That makes it possible to account for the reliability of the model.
-    - Robust. Performs well even if its assumptions are somewhat violated by the true model from which the data were generated.
-    - Performs well with large datasets. Large amounts of data can be analyzed using standard computing resources in reasonable time.
-    - Once trained can be implemented on hardware => extremely fast execution (real-time applications like trading or automotive).
-- Disadvantages:
-    - Locally-optimal: The problem of learning an optimal decision tree is known to be NP-complete under several aspects of optimality and even for simple concepts. Consequently, practical decision-tree learning algorithms are based on heuristics such as the greedy algorithm where locally-optimal decisions are made at each node. Such algorithms cannot guarantee to return the globally-optimal decision tree. To reduce the greedy effect of local-optimality some methods such as the dual information distance (DID) tree were proposed.
-    - Overfitting: Decision-tree learners can create over-complex trees that do not generalize well from the training data. (use pruning to limit)
-    - There are concepts that are hard to learn because decision trees do not express them easily, such as XOR, parity or multiplexer problems. In such cases, the decision tree becomes prohibitively large.
+- Simple to understand and interpret. People are able to understand decision tree models after a brief explanation.
+- Useful to work with non technical departments (marketing/sales).
+- Requires little data preparation.
+- Other techniques often require data normalization, dummy variables need to be created and blank values to be removed.
+- Able to handle both numerical and categorical data.
+    - Other techniques are usually specialized in analyzing datasets that have only one type of variable.
+- Uses a white box model.
+    - If a given situation is observable in a model the explanation for the condition is easily explained by boolean logic.
+    - By contrast, in a black box model, the explanation for the results is typically difficult to understand, for example in neural networks.
+- Possible to validate a model using statistical tests. That makes it possible to account for the reliability of the model.
+- Robust. Performs well even if its assumptions are somewhat violated by the true model from which the data were generated.
+- Performs well with large datasets. Large amounts of data can be analyzed using standard computing resources in reasonable time.
+- Once trained can be implemented on hardware and has extremely fast execution.
+    - Real-time applications like trading, for example.
+
+
+### CART Disadvantages
+
+- Locally-optimal
+    - Practical decision-tree learning algorithms are based on heuristics such as the greedy algorithm where locally-optimal decisions are made at each node.
+    - Such algorithms cannot guarantee to return the globally-optimal decision tree.
+- Overfitting
+    - Decision-tree learners can create over-complex trees that do not generalize well from the training data.
+- There are concepts that are hard to learn because decision trees do not express them easily, such as XOR, parity or multiplexer problems. In such cases, the decision tree becomes prohibitively large.
+    - **Neural networks**, for example, are superior for these problems.
+- Decision tree learners create biased trees if some classes dominate. It is therefore recommended to balance the dataset prior to fitting with the decision tree.
 
 
 <a name="ind-practice"></a>
