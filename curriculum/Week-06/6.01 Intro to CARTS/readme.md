@@ -84,7 +84,19 @@ In order to build a decision tree we need an algorithm that is capable of determ
 - _recursive_: splits task into subtasks, solves each the same way
 - _local optimum_: solution for a given neighborhood of points
 
-The algorithm works by recursively partitioning records into smaller and smaller subsets. The partitioning decision is made at each node according to a metric called _purity_. A node is said to be 100% pure when all of its records belong to a single class (or have the same value).
+The algorithm works by recursively partitioning records into smaller and smaller subsets. Like all data science techniques, we need to quantify this segregation. We can do so with any of the following metrics:
+
+- [Classification Error]
+- [Entropy]
+- Gini
+
+Each of these measures the purity of the separation. The partitioning decision is made at each node according to a metric called _purity_. A node is said to be 100% pure when all of its records belong to a single class (or have the same value).
+
+Classification error asks: what percent are positive in each group? The lowest error would be a separation that has 100% positive in one group and 0% in the other (completely separating news stories from non-news stories.)
+
+When training, we want to choose the question that gives us the best change in our purity measure. Given our current set of data points (articles), you could ask: what question will make the largest change in purity?
+
+At each training step, we take our current set and choose the best feature to split (in other words, the best question to ask) based on information gain. After splitting, we then have two new groups. This process is next repeated recursively for each of those two groups.
 
 ### Example: Psuedocode binary classification with classes A, B
 
