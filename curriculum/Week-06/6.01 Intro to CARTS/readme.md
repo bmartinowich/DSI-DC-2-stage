@@ -1,5 +1,5 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Intro to Classification and Regression Trees (CARTs)
-## By Patrick D. Smith
+**By Patrick D. Smith**
 
 ### LESSON GUIDE
 
