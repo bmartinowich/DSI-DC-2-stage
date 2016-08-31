@@ -73,29 +73,21 @@ These steps are then recursively applied to each child node.
 - Splits can be 2 way or multi-way. 
 -Features can be categorical or continuous.
 
+###Multi-Way Splits
+
 ![multi-way](./assets/images/multi-way.png)
+
+###Continuous Measure Descisions
+
 ![Continuous-features](./assets/images/Continuous-features.png)
 
-**Check:** Find rules to split the data below
+### Optimization and "Purity" 
 
-|Exercises Completed|Total Time (min)|Result|
-|----|
-|3|30|Pass|
-|2|25|Pass|
-|4|49|Pass|
-|3|47|Fail|
-|2|50|Fail|
-|1|32|Fail|
-|3|26|Pass|
+Recall from the algorithm above, that we iteratively create **test conditions** to split the data.
 
+How do we determine the best split among all possible splits? Recall that no split is necessary (at a given node) when all records belong to the same class. Therefore we want each step to create the partition with the **highest possible purity**.
 
-### Optimization functions
-
-Recall from the algorithm above, that we iteratively create test conditions to split the data. How do we determine the best split among all possible splits? Recall that no split is necessary (at a given node) when all records belong to the same class. Therefore we want each step to create the partition with the **highest possible purity**.
-
-In order to do this, we will need an objective function to optimize. We want our objective function to measure the gain in purity from a particular split. Therefore we want it to depend on the class distribution over the nodes (before and after the split). For example, let $p(i|t)$ be the probability of class $i$ at node $t$ (eg, the fraction of records labeled $i$ at node $t$). Then for a binary (0/1) classification problem:
-
-The maximum impurity partition is given by the distribution:
+The **maximum impurity partition** is given by the distribution:
 $$
 p(0|t) = p(1|t) = 0.5
 $$
