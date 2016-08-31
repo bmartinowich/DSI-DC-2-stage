@@ -108,11 +108,11 @@ The html ratio
 
 First, we want to choose the feature the gives us the highest purity. In this case, we choose the recipe feature.
 
-[](./assets/single-node-tree.png)
+![](./assets/single-node-tree.png)
 
 Then, we take each side of the tree and repeat the process, choosing the feature that best splits the remaining samples.
 
-[](./assets/depth-2-tree)
+![](./assets/depth-2-tree)
 
 As you can see the best feature is different on both sides of this tree, which shows the interaction of features. If the article does not contain 'recipe', then we care about the image_ratio, but otherwise we don't.
 
