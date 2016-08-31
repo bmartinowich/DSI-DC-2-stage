@@ -1,4 +1,5 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Intro to Classification and Regression Trees (CARTs)
+## By Patrick D. Smith
 
 ### LESSON GUIDE
 
@@ -100,7 +101,7 @@ At each training step, we take our current set and choose the best feature to sp
 
 ### Visual Example of a Decision Tree
 
-Let's build a sample tree for our evergreen prediction problem. Assume our features are:
+Let's build a sample tree for our evergreen prediction problem from last week. Assume our features are:
 
 Whether the article contains a recipe
 The image ratio
@@ -118,30 +119,6 @@ As you can see the best feature is different on both sides of this tree, which s
 
 We can continue that process until we have asked as many questions as we want or until our leaf nodes are completely pure.
 
-### Making Predictions from a Decision Tree
-
-Predictions are made in the decision tree from answering each of the questions. Once we reach a leaf node, our prediction is made by taking the majority label of the training samples that fulfill the questions. If there are 10 training samples that match our new sample, and 6 are positive, we will predict positive since 6/10 (60%) are positive.
-
-In the sample tree, if we want to classify a new article, we can proceed by first asking - does the article contain the word recipe? If it doesn't, we can check: does the article have a lot of images? If it does, 630 / 943 articles are evergreen - so we can assign a 0.67 probability for evergreen sites.
-
-
-
-
-
-
-Given a set of records `Dt` at node `t`:
-
-1. If all records in `Dt` belong to class A, then `t` is a _leaf node_ corresponding to class (Base case)
-- If `Dt` contains records from both A and B do the following:
-    - create test condition to partition the records further
-    - `t` is an internal node, with outgoing edges to child nodes
-    - partition records in Dt to children according to test
-
-These steps are then recursively applied to each child node.
-
-- Splits can be 2 way or multi-way. 
--Features can be categorical or continuous.
-
 ###Multi-Way Splits
 
 ![multi-way](./assets/images/multi-way.png)
@@ -150,88 +127,11 @@ These steps are then recursively applied to each child node.
 
 ![Continuous-features](./assets/images/Continuous-features.png)
 
-### Optimization and "Purity" 
+### Making Predictions from a Decision Tree
 
-Recall from the algorithm above, that we iteratively create **test conditions** to split the data.
+Predictions are made in the decision tree from answering each of the questions. Once we reach a leaf node, our prediction is made by taking the majority label of the training samples that fulfill the questions. If there are 10 training samples that match our new sample, and 6 are positive, we will predict positive since 6/10 (60%) are positive.
 
-How do we determine the best split among all possible splits? Recall that no split is necessary (at a given node) when all records belong to the same class. Therefore we want each step to create the partition with the **highest possible purity**.
-
-The **maximum impurity partition** is given by the distribution:
-$$
-p(0|t) = p(1|t) = 0.5
-$$
-
-where both classes are present in equal manner.
-
-On the other hand, the minimum impurity partition is obtained when only one class is present, i.e:
-$$
-p(0|t) = 1 – p(1|t) = 1
-$$
-
-Therefore in the case of a binary classification we need to define an _impurity_ function that will smoothly vary between the two extreme cases of minimum impurity (one class or the other only) and the maximum impurity case of equal mix.
-
-We can define several functions that satisfy these properties. Here are three common ones:
-
-
-$$
-\text{Entropy}(t) = - \sum_{i=0}^{c-1} p(i|t)log_2 p(i|t)
-$$
-
-$$
-\text{Gini}(t) = 1 - \sum_{i=0}^{c-1} [p(i|t)]^2
-$$
-
-$$
-\text{Classification error}(t) = 1 - \max_i[p(i|t)]
-$$
-
-![measures](./assets/images/measures.png)
-
-Note that each measure achieves its max at 0.5, min at 0 and 1.
-
-Impurity measures put us on the right track, but on their own they are not enough to tell us how our split will do. We still need to look at impurity before & after the split. We can make this comparison using the gain:
-$$
-\Delta = I(\text{parent}) - \sum_{\text{children}}\frac{N_j}{N}I(\text{child}_j)
-$$
-
-Where $I$ is the impurity measure, $N_j$ denotes the number of records at child node $j$, and $N$ denotes the number of records at the parent node. When $I$ is the entropy, this quantity is called the _information gain_.
-
-Generally speaking, a test condition with a high number of outcomes can lead to overfitting (ex: a split with one outcome per record). One way of dealing with this is to restrict the algorithm to binary splits only (CART). Another way is to use a splitting criterion which explicitly penalizes the number of outcomes (C4.5).
-
-**Check:** what properties does an impurity measure need to satisfy?
-
-
-<a name="discussion"></a>
-## Discussion: The ID3 Algorithm for decision trees 
-
-Here's the pseudo code for the ID3 decision tree algorithm:
-
-    ID3 (Examples, Target_Attribute, Candidate_Attributes)
-        Create a Root node for the tree
-        If all examples have the same value of the Target_Attribute,
-            Return the single-node tree Root with label = that value
-        If the list of Candidate_Attributes is empty,
-            Return the single node tree Root,
-                with label = most common value of Target_Attribute in the examples.
-        Otherwise Begin
-            A ← The Attribute that best classifies examples (most information gain)
-            Decision Tree attribute for Root = A.
-            For each possible value, v_i, of A,
-                Add a new tree branch below Root, corresponding to the test A = v_i.
-                Let Examples(v_i) be the subset of examples that have the value v_i for A
-                If Examples(v_i) is empty,
-                    Below this new branch add a leaf node
-                        with label = most common target value in the examples
-                Else
-                    Below this new branch add the subtree
-                        ID3 (Examples(v_i), Target_Attribute, Attributes – {A})
-        End
-        Return Root
-
-Let's go through it together. How would you implement that in python? Which data structure would you use?
-
-> Answer:
-- there are several ways to implement this. A simple way is to implement a function that returns a trained tree. The tree itself could be a dictionary or a custom class. See [here](https://github.com/gumption/Python_for_Data_Science/blob/master/4_Python_Simple_Decision_Tree.ipynb), [here](http://codereview.stackexchange.com/questions/109089/id3-decision-tree-in-python) and [here](http://kldavenport.com/pure-python-decision-trees/) for examples of code.
+In the sample tree, if we want to classify a new article, we can proceed by first asking - does the article contain the word recipe? If it doesn't, we can check: does the article have a lot of images? If it does, 630 / 943 articles are evergreen - so we can assign a 0.67 probability for evergreen sites.
 
 <a name="reprise"></a>
 ## Decision Trees part 2 
