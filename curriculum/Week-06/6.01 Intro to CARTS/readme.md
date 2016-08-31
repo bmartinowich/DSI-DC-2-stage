@@ -21,6 +21,34 @@ These are very powerful machine learning tools that allow us to solve complex pr
 <a name="introduction"></a>
 ## Intro to Decision Trees 
 
+### The Intuition of Decision Trees
+
+Decisions trees are similar to the game 20 questions. They make predictions by answering a series of questions, most often yes or no questions. What we typically want is the smallest set of questions to get to the right answer. We want each question to reduce our search space as much as possible.
+
+Trees are a data structure made up of nodes and branches. Each node typically has two (or more) branches that connect it to it's children. Each child is another node in the tree and contains it's own subtree. Nodes without any children are known as leaf nodes.
+
+A decision tree contains a question at every node. Depending on the answer to that question, we will proceed down the left or right branch of the tree and ask another question. Once we don't have any more questions at the leaf nodes, we make a prediction.
+
+It's important to note the next question we ask is always dependent on the last. We'll see how this sets decision trees apart from previous models. For example, suppose we want to predict if an article is a news article. We may start by asking: does it mention a President?
+
+- If it does, it must be a news article
+- If not, let's ask another question - does the article contain other political figures?
+- If not, does the article contain references to political topics?
+- Etc
+
+### Comparison to Previous Models
+
+Decision trees have an advantage over logistic regression by being non-linear. A linear model is one in which a change in an input variable has a constant change on the output variable.
+
+An example of this difference is the relationship between years of education and salary. We know that as education increases, salary should as well. A linear model would say this effect is constant. As your years of education goes from 10 to 15 years or 15 to 20 years, the corresponding increase in salary would be about the same. A non-linear model allows us to change the effect depending on the input. For instance, with a non-linear model you could show how the relationship of education to salary changes dramatically from 0-15 years, but neglibly from years 15-20.
+
+Additionally, trees automatically contain interactions of features. Since each question is dependent on the last, the features are naturally interacting.
+
+
+
+
+
+
 ### What a Decision Tree is
 _Decision trees_ are a _non-parametric hierarchical_ classification technique.
 
