@@ -58,7 +58,7 @@ In order to build a decision tree we need an algorithm that is capable of determ
 
 The algorithm works by recursively partitioning records into smaller and smaller subsets. The partitioning decision is made at each node according to a metric called _purity_. A node is said to be 100% pure when all of its records belong to a single class (or have the same value).
 
-### Example: binary classification with classes A, B
+### Example: Psuedocode binary classification with classes A, B
 
 Given a set of records `Dt` at node `t`:
 
@@ -70,7 +70,8 @@ Given a set of records `Dt` at node `t`:
 
 These steps are then recursively applied to each child node.
 
-Splits can be 2 way or multi-way. Features can be categorical or continuous.
+- Splits can be 2 way or multi-way. 
+-Features can be categorical or continuous.
 
 ![multi-way](./assets/images/multi-way.png)
 ![Continuous-features](./assets/images/Continuous-features.png)
