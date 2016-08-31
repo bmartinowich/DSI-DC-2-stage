@@ -94,11 +94,38 @@ Each of these measures the purity of the separation. The partitioning decision i
 
 Classification error asks: what percent are positive in each group? The lowest error would be a separation that has 100% positive in one group and 0% in the other (completely separating news stories from non-news stories.)
 
-When training, we want to choose the question that gives us the best change in our purity measure. Given our current set of data points (articles), you could ask: what question will make the largest change in purity?
+When training, we want to choose the question that gives us the best change in our purity measure. Given our current set of data points (articles), you could ask: what question will make the largest change in purity? We'll come back to this concept in a bit. 
 
 At each training step, we take our current set and choose the best feature to split (in other words, the best question to ask) based on information gain. After splitting, we then have two new groups. This process is next repeated recursively for each of those two groups.
 
-### Example: Psuedocode binary classification with classes A, B
+### Visual Example of a Decision Tree
+
+Let's build a sample tree for our evergreen prediction problem. Assume our features are:
+
+Whether the article contains a recipe
+The image ratio
+The html ratio
+
+First, we want to choose the feature the gives us the highest purity. In this case, we choose the recipe feature.
+
+[](./assets/single-node-tree.png)
+
+Then, we take each side of the tree and repeat the process, choosing the feature that best splits the remaining samples.
+
+[](./assets/depth-2-tree)
+
+As you can see the best feature is different on both sides of this tree, which shows the interaction of features. If the article does not contain 'recipe', then we care about the image_ratio, but otherwise we don't.
+
+We can continue that process until we have asked as many questions as we want or until our leaf nodes are completely pure.
+
+
+
+
+
+
+
+
+
 
 Given a set of records `Dt` at node `t`:
 
