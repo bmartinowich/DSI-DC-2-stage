@@ -1,33 +1,5 @@
----
-title: Intro to Classification and Regression Trees (CARTs)
-duration: "1:25"
-creator:
-    name: Francesco Mosconi
-    city: SF
----
-
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Intro to Classification and Regression Trees (CARTs)
 Week 6 | Lesson 1.1
-
-### LEARNING OBJECTIVES
-*After this lesson, you will be able to:*
-- Describe what a decision tree is
-- Explain how a classification tree works
-- Explain how a regression tree works
-
-### STUDENT PRE-WORK
-*Before this lesson, you should already be able to:*
-- Perform linear and polynomial regression
-- Perform classification with KNN and Logistic Regression
-- Use Python and Pandas to munge data
-
-### INSTRUCTOR PREP
-*Before this lesson, instructors will need to:*
-- Read in / Review any dataset(s) & starter/solution code
-- Generate a brief slide deck
-- Prepare any specific materials
-- Provide students with additional resources
-- Make sure that students have installed graphviz to visualize trees
 
 ### LESSON GUIDE
 
@@ -41,18 +13,13 @@ Week 6 | Lesson 1.1
 | 5 mins | [Conclusion](#conclusion) | Conclusion |
 
 <a name="opening"></a>
-## Opening (5 mins)
+## Opening 
 Last week we learned many new things.
-
-**Check:** What were the most interesting things you learned last week? What were the hardest?
 
 This week we will learn about decision trees and ensemble methods. These are very powerful machine learning tools that allow us to solve complex problems in a very performant way. Also, they are easy to visualize and communicate, making them extremely powerful in a context where other (non-technical) stakeholders are involved.
 
-**Check:** What do you already know about decision trees? What do you expect to learn?
-
-
 <a name="introduction"></a>
-## Intro to Decision Trees (25 min)
+## Intro to Decision Trees 
 
 ### What a Decision Tree is
 _Decision trees_ are a _non-parametric hierarchical_ classification technique.
@@ -167,7 +134,7 @@ Generally speaking, a test condition with a high number of outcomes can lead to 
 
 
 <a name="discussion"></a>
-## Discussion: The ID3 Algorithm for decision trees (15 mins)
+## Discussion: The ID3 Algorithm for decision trees 
 
 Here's the pseudo code for the ID3 decision tree algorithm:
 
@@ -199,7 +166,7 @@ Let's go through it together. How would you implement that in python? Which data
 - there are several ways to implement this. A simple way is to implement a function that returns a trained tree. The tree itself could be a dictionary or a custom class. See [here](https://github.com/gumption/Python_for_Data_Science/blob/master/4_Python_Simple_Decision_Tree.ipynb), [here](http://codereview.stackexchange.com/questions/109089/id3-decision-tree-in-python) and [here](http://kldavenport.com/pure-python-decision-trees/) for examples of code.
 
 <a name="reprise"></a>
-## Decision Trees part 2 (15 min)
+## Decision Trees part 2 
 
 **Check:** What is overfitting? Why do we want to avoid it?
 > Answer: Overfitting occurs when a statistical model describes random error or noise instead of the underlying relationship. Overfitting generally occurs when a model is excessively complex, such as having too many parameters relative to the number of observations. A model that has been overfit will generally have poor predictive performance, as it can exaggerate minor fluctuations in the data.
@@ -238,7 +205,7 @@ What do you think are the main advantages / disadvantages of decision trees? Dis
 
 
 <a name="ind-practice"></a>
-## Independent Practice: Decision trees as a service (10 mins)
+## Independent Practice: Decision trees as a service 
 
 There are several companies that offer decision trees as service. Two famous ones are BigML and WiseIO. Let's split the class in 2. One half will look at BigML case studies and the other half will look at WiseIO case studies.
 
@@ -248,7 +215,7 @@ There are several companies that offer decision trees as service. Two famous one
 Review a few of them with your team mates and choose one that you find particularly interesting. Then present it to the other group.
 
 <a name="conclusion"></a>
-## Conclusion (5 mins)
+## Conclusion 
 
 In this class we learned about Classification and Regression trees. We learned how Hunt's algorithm helps us recursively partition our data and how impurity gain is useful for determining optimal splits.
 We've also reviewed the pros and cons of decision trees and industry
