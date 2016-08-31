@@ -40,6 +40,12 @@ The tree gives me a precise rule to make a decision depending on the values assu
 
 Let's learn a little vocabulary. The tree is a case of _Directed Acyclical Graph (DAG)_, and as such it has _Nodes_ and _Edges_. Nodes correspond to questions or decisions, while edges correspond to possible answers to a given question.
 
+DAG is simply a complicated way of saying: 
+- **D**irected: The connections between the graph's nodes have a direction
+- **A**crylic: AKA "non-cicular," we move in one direction and never encounter a single node twice
+- **G**raph: A structure consisting of nodes 
+
+
 The top node is also called _root node_ it has 0 incoming edges, and 2+ outgoing edges. Internal nodes test a condition on a specific feature. They have 1 incoming edge, and 2+ outgoing edges. Finally a leaf node contains a class label (or a regression value). It has 1 incoming edge and 0 outgoing edges.
 
 ### How to build a decision tree
