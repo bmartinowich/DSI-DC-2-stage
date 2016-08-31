@@ -112,15 +112,17 @@ First, we want to choose the feature the gives us the highest purity. In this ca
 
 Then, we take each side of the tree and repeat the process, choosing the feature that best splits the remaining samples.
 
-![](./assets/depth-2-tree)
+![](./assets/depth-2-tree.png)
 
 As you can see the best feature is different on both sides of this tree, which shows the interaction of features. If the article does not contain 'recipe', then we care about the image_ratio, but otherwise we don't.
 
 We can continue that process until we have asked as many questions as we want or until our leaf nodes are completely pure.
 
+### Making Predictions from a Decision Tree
 
+Predictions are made in the decision tree from answering each of the questions. Once we reach a leaf node, our prediction is made by taking the majority label of the training samples that fulfill the questions. If there are 10 training samples that match our new sample, and 6 are positive, we will predict positive since 6/10 (60%) are positive.
 
-
+In the sample tree, if we want to classify a new article, we can proceed by first asking - does the article contain the word recipe? If it doesn't, we can check: does the article have a lot of images? If it does, 630 / 943 articles are evergreen - so we can assign a 0.67 probability for evergreen sites.
 
 
 
