@@ -241,7 +241,15 @@ Let's go through it together. How would you implement that in python? Which data
 
 ### Preventing overfitting
 
-In addition to determining splits, we also need a stopping criterion to tell us when we’re done. For example, we can stop when all records belong to the same class, or when all records have the same attributes. This is correct in principle, but would likely lead to overfitting. One possibility is _pre-pruning_, which involves setting a minimum threshold on the gain, and stopping when no split achieves a gain above this threshold. This prevents overfitting, but is difficult to calibrate in practice (may preserve bias!). Alternatively we could build the full tree, and then perform _pruning_ as a post-processing step. To prune a tree, we examine the nodes from the bottom-up and simplify pieces of the tree (according to some criteria). Complicated subtrees can be replaced either with a single node, or with a simpler (child) subtree. The first approach is called subtree replacement, and the second is subtree raising.
+Decision trees tend to be weak models because they can memorize or overfit to a dataset. Remember, a model is overfit when it instead of picking up on general trends in the data, it memorizes or bends to a few specific examples. If we simply memorized each article and it's classification, our model would overfit. This is like using every word in every article as a feature.
+
+Recall that the **stopping criterion** determines when to no longer construct further nodes.
+
+We can stop when all records belong to the same class, or when all records have the same attributes. This maximizes variance at the expense of bias, leading to overfitting.
+
+**Subtree replacement:** One possible way to prevent overfitting is **pre-pruning**, which involves setting a minimum threshold on the gain, and stopping when no split achieves a gain above this threshold. It is difficult to calibrate in practice.
+
+**Subtree raising:** Alternatively we can build the full tree and then perform pruning as a post-processing step. To prune a tree, the nodes are examinde from the bottom-up and pieces of the tree are simplified according to some criteria. Complicated subtrees can be replaced either with a single node or with a simpler (child) subtree.
 
 ### Decision tree regression
 
