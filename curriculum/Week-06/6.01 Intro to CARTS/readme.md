@@ -13,9 +13,10 @@
 
 <a name="opening"></a>
 ## Opening 
-Last week we learned many new things.
 
-This week we will learn about decision trees and ensemble methods. These are very powerful machine learning tools that allow us to solve complex problems in a very performant way. Also, they are easy to visualize and communicate, making them extremely powerful in a context where other (non-technical) stakeholders are involved.
+Last week we, we started getting into some of the meat of data science. This week, we're going to learn about tree and ensemble methods, and it all starts with it's most basic algorithm - the decision tree - otherwise known as the classification and regression tre. 
+
+These are very powerful machine learning tools that allow us to solve complex problems in a very performant way. Also, they are easy to visualize and communicate, making them extremely powerful in a context where other (non-technical) stakeholders are involved.
 
 <a name="introduction"></a>
 ## Intro to Decision Trees 
