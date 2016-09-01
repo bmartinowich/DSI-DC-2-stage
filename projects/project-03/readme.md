@@ -17,7 +17,7 @@ We are going to collect salary information on data science jobs in a variety of 
 Normally we could use regression for this task; however, instead we will convert this into a classification problem.
 
 - **Question**: Why would we want this to be a classification problem?
-- **Answer**: While more precision may be better, there is a fair amount of natural variance in job salaries; therefore, predicting a range be may be useful.
+- **Answer**: While more precision may be better, there is a fair amount of natural variance in job salaries; therefore, predicting a range **(above the mean or below the mean)** be may be useful.
 
 The first part of assignment will be focused on scraping [Indeed.com](www.indeed.com) and the second will be focused on using the listings with salary information to build a model and predict salaries.
 
@@ -25,7 +25,7 @@ Your job is to:
 
 1. Collect data from [Indeed.com](www.indeed.com) on data science salary trends for your analysis.
   - Select and parse data from at least 1000 postings for jobs, potentially from multiple location searches.
-2. Find out what factors most directly impact salaries (Title, location, department, etc.). In this case, we do not want to predict mean salary as would be done in a regression. Your boss believes that salary is better represented in categories than continuously
+2. Find out what factors most directly impact salaries (Title, location, department, etc.). In this case, we do not want to predict mean salary as would be done in a regression. Your boss believes that salary is better represented in categories than continuously. These categories will be **1 if above the mean, and 0 if below the mean**. If a salary happens to be at the mean, alot that to the "0" category. 
   - Test, validate, and describe your models. What factors predict salary category? How do your models perform?
 3. Author a report to your Principal detailing your analysis.
 
