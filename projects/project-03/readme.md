@@ -2,7 +2,7 @@
 
 ### Description
 
-This week, we learned about web scraping and logistic regression. Now, we're going to put both of these skills to the test!
+These past few weeks, we've learned about web scraping and logistic regression. Now, we're going to put both of these skills to the test!
 
 You're working as a data scientist for a contracting firm that's rapidly expanding. Now that they have their most valuable employee (you!), they need to leverage data to win more contracts. Your firm offers technology and scientific solutions and wants to be competitive in the hiring market. Your principal thinks the best way to gauge salary amounts is to take a look at what industry factors influence the pay scale for these professionals.
 
@@ -10,11 +10,11 @@ Aggregators like [Indeed.com](https://www.indeed.com) regularly pool job posting
 
 #### Project Summary
 
-In this project, we will practice two major skills. Collecting data by scraping a website and then building a binary predictor with Logistic Regression.
+In this project, we will practice two major skills. Collecting data by scraping a website and then building a binary predictor.
 
 We are going to collect salary information on data science jobs in a variety of markets. Then using the location, title, and summary of the job, we will attempt to predict a corresponding salary for that job. While most listings DO NOT come with salary information (as you will see in this exercise), being to able extrapolate or predict the expected salaries for other listings will be extremely useful for negotiations :)
 
-Normally we could use regression for this task; however, instead we will convert this into a classification problem and use Logistic Regression.
+Normally we could use regression for this task; however, instead we will convert this into a classification problem.
 
 - **Question**: Why would we want this to be a classification problem?
 - **Answer**: While more precision may be better, there is a fair amount of natural variance in job salaries; therefore, predicting a range be may be useful.
@@ -30,20 +30,21 @@ Your job is to:
 3. Author a report to your Principal detailing your analysis.
 
 **BONUS PROBLEMS:**
-1. Your boss would rather tell a client incorrectly that they would get a lower salary job than tell a client incorrectly that they would get a high salary job. Adjust one of your logistic regression models to ease his mind, and explain what it is doing and any tradeoffs. Plot the ROC curve.
+1. Your boss would rather tell a client incorrectly that they would get a lower salary job than tell a client incorrectly that they would get a high salary job. Adjust one of your models to ease his mind, and explain what it is doing and any tradeoffs. Plot the ROC curve.
 2. Text variables and regularization:
   - **Part 1**: Job descriptions contain more potentially useful information you could leverage. Use the job summary to find words you think would be important and add them as predictors to a model.
   - **Part 2**: Gridsearch parameters for Ridge and Lasso for this model and report the best model.
 
 
-**Goal:** Scrape & clean data, run logistic regression, derive insights, present findings.
+**Goal:** Scrape & clean data, run your model, derive insights, present findings.
 
 ---
 
 ### Requirements
 
 - Scrape and prepare your data using BeautifulSoup.
-- A Jupyter Notebook with your regression analysis for a peer audience of data scientists.
+- **Create and compare two models**. One of these must be a random forest, however the other can be a classifier of your choosing: logistic regression, KNN, or SVM. 
+- A Jupyter Notebook with your analysis for a peer audience of data scientists.
 - A written report directed to your (non-technical!) Principal
 
  **Pro Tip:** You can find a good example report [here](https://www.dlsweb.rmit.edu.au/lsu/content/2_assessmenttasks/assess_tuts/reports_ll/report.pdf).
