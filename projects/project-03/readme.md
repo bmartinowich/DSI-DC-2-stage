@@ -2,7 +2,7 @@
 
 ### Description
 
-These past few weeks, we've learned about web scraping and logistic regression. Now, we're going to put both of these skills to the test!
+These past few weeks, we've learned about web scraping and different classifiers. Now, we're going to put both of these skills to the test!
 
 You're working as a data scientist for a contracting firm that's rapidly expanding. Now that they have their most valuable employee (you!), they need to leverage data to win more contracts. Your firm offers technology and scientific solutions and wants to be competitive in the hiring market. Your principal thinks the best way to gauge salary amounts is to take a look at what industry factors influence the pay scale for these professionals.
 
@@ -12,7 +12,7 @@ Aggregators like [Indeed.com](https://www.indeed.com) regularly pool job posting
 
 In this project, we will practice two major skills. Collecting data by scraping a website and then building a binary predictor.
 
-We are going to collect salary information on data science jobs in a variety of markets. Then using the location, title, and summary of the job, we will attempt to predict a corresponding salary for that job. While most listings DO NOT come with salary information (as you will see in this exercise), being to able extrapolate or predict the expected salaries for other listings will be extremely useful for negotiations :)
+We are going to collect salary information on data science jobs in a variety of markets. Then using the location, title, and summary of the job, we will attempt to predict a corresponding salary for that job. While most listings *DO NOT* come with salary information (as you will see in this exercise), being to able extrapolate or predict the expected salaries for other listings will be extremely useful for negotiations :)
 
 Normally we could use regression for this task; however, instead we will convert this into a classification problem.
 
