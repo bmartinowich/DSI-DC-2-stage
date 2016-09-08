@@ -1,13 +1,4 @@
----
-title: Dimensionality Reduction
-duration: "1:25"
-creator:
-    name: Patrick D. Smith
-    city: DC
----
-
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Intro to Dimensionality Reduction
-Week 7 | Lesson 2.1
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -20,13 +11,6 @@ Week 7 | Lesson 2.1
 - Have a working understand of scikit learn and numpy
 - Be able to create functions from scratch in python
 - Have a basic understanding of linear algebra concepts such as matrices, eigenvalues, and eigenvectors
-
-### INSTRUCTOR PREP
-*Before this lesson, instructors will need to:*
-- Read in / Review any dataset(s) & starter/solution code
-- Generate a brief slide deck
-- Prepare any specific materials
-- Provide students with additional resources
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
