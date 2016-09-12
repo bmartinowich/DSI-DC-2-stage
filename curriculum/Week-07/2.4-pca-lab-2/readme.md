@@ -1,12 +1,3 @@
----
-title: PCA Lab - Put It All Together
-type: lab
-duration: "1:25"
-creator:
-    name: Patrick Smith
-    city: DC
----
-
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) PCA Lab: Put It All Together
 
 ## Introduction
