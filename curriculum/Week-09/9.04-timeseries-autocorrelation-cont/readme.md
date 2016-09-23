@@ -1,13 +1,5 @@
----
-title: Intro to ARIMA Model
-duration: "1:40"
-creator:
-    name: Robby Grodin
-    city: BOS
----
-
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Intro to ARIMA Model
-Week 9 | Lesson 3.1
+Week 9 
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -19,14 +11,6 @@ Week 9 | Lesson 3.1
 - Prior definition and Python functions for moving averages and autocorrelation
 - Prior exposure to linear regression with discussion of coefficients and residuals
 - `pip install statsmodels` (should be included with Anaconda)
-
-### INSTRUCTOR PREP
-*Before this lesson, instructors will need to:*
-- `pip install statsmodels` (should be included with Anaconda)
-- Run through the code examples in the lesson plan, and prepare to utilize as a live coding exercise (or distribute to students in the form of an ipython notebook if you desire)
-- Create a general slide deck
-- Read through datasets and starter/solution code
-- Add to any Additional Resources
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
@@ -45,7 +29,7 @@ Week 9 | Lesson 3.1
 
 ---
 <a name="opening"></a>
-## Opening: What are Time Series Models? (5 min)
+## Opening: What are Time Series Models? 
 
 In the last class, we focused on exploring time-series data and common statistics for time-series analysis. In this class, we'll advance those techniques to show how to predict or forecast from time series data.
 
@@ -62,7 +46,7 @@ As with previous modeling exercises, we will have to evaluate different types of
 We will want to evaluate on _held-out set or test data_ to ensure our model performs well on unseen data.
 
 <a name="intro-tsmprops"></a>
-## Introduction: Properties of Time Series Models (15 min)
+## Introduction: Properties of Time Series Models 
 
 ### Training and Test sets
 
@@ -87,8 +71,6 @@ We also looked at autocorrelation to compute the relationship of the data with p
 ![](./assets/images/autocorrelation.gif)
 
 Typically, for a high-quality model, we require some autocorrelation in our data. We can compute autocorrelation at various lag values to determine how far back in time we need to go.
-
-> Instructor's Note: Draw a time series on the board with obvious trend/seasonality. As the students to decide where to split the data for training/testing, and discuss their decision.
 
 ### Stationarity
 
@@ -127,7 +109,7 @@ A simpler but related method is _differencing_. This is very closely related to 
 Instead of predicting the (non-stationary) series, we can predict the difference between two consecutive values. We will see that the **ARIMA** model incorporates this approach.
 
 <a name="exercise"></a>
-## Exercise: Investigating Timeseries Data using Google (10 mins)
+## Exercise: Investigating Timeseries Data using Google 
 
 Non-stationary data is the most common type of data, since almost any interesting dataset is non-stationary. Can you think of some datasets that are stationary? Let's open trends.google.com and investigate some time series visualizations of google searches. Students, propose topics that you think would have a stationary time series. Was your assumption correct?
 
@@ -136,7 +118,7 @@ Non-stationary data is the most common type of data, since almost any interestin
 In the rest of this lesson, we are going to build up to the **ARIMA** time-series model. This models combines the ideas of differencing and two models we will see below: **AR** or autoregressive models and **MA** or moving average models.
 
 <a name="intro-ar"></a>
-## AR Models (5 min)
+## AR Models 
 
 **Autoregressive (AR) models** are those are that use data from previous time-points to predict the next time-point. These are very similar to previous regression models, except as input - we'll take some previous outcome.
 
@@ -169,7 +151,7 @@ If we observe an autocorrelation of 0?
 
 
 <a name="intro-ma"></a>
-## MA Models (5 min)
+## MA Models 
 
 **Moving average models**, as opposed to autoregressive models, do not take the previous outputs (or values) as inputs, but instead take the previous error terms. We will attempt to predict the next value based on the overall average and how incorrect our previous predictions were.
 
@@ -247,7 +229,7 @@ To recap...
 - ARIMA: ARMA model with an added term describing differencing order
 
 <a name="demo1"></a>
-## Demo: Time Series EDA in `statsmodels` (15 mins)
+## Demo: Time Series EDA in `statsmodels` 
 
 To explore time series models, we will continue with the Rossmann sales data.  This dataset has sales data for sales at every Rossmann store for a 3-year period, as well as indicators of holidays and basic store information.
 
@@ -398,7 +380,7 @@ Remember this is an AR(1) + MA(1) model. So the AR coefficient represents depend
 The coefficients here are 0.69 for the AR component and -0.03 for the MA component. The AR coefficient is the same as before (decreasing values) and the MA component is fairly small (which we should have expected from the autocorrelation plots).
 
 <a name="demo3"></a>
-## Demo: ARIMA models in `statsmodels` (15 mins)
+## Demo: ARIMA models in `statsmodels` 
 
 To train an ARIMA model in `statsmodels`, we can change the `ARMA` model to `ARIMA` and additionally provide the differencing parameter. To start, we can see that we can train an ARMA(2,2) model by training an ARIMA(2, 0, 2) model.
 
@@ -503,7 +485,7 @@ Issues with seasonality could also be handled by pre-processing tricks such as d
 
 
 <a name="conclusion"></a>
-## Recap (5 mins)
+## Recap
 - Timeseries models use previous values to predict future values, also known as forecasting.
 - AR and MA model are simple models on previous values or previous errors respectively.
 - ARMA combines these two types of models to account for both local shifts (due to AR models) and abrupt changes (MA models)
