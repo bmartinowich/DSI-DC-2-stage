@@ -21,24 +21,22 @@ Week 9 | Lesson 9.01
 | 20 min  | [Demo](#demo)  | Time Series In Pandas  |
 | 15 min  | [Discussion](#discussion)  | Date Ranges and Frequencies |
 | 25 min  | [Independent Practice](#ind-practice)  | Manipulating a Time Series  |
-| 5 min  | [Conclusion](#conclusion)  | Recapitulation  |
 
 ---
 
 <a name="opening"></a>
-## What Is Time Series Analysis? (5 mins)
+## What Is Time Series Analysis? 
 - Statistical modeling of time ordered data observations
 - Two main goals:
   * Identifying the underlying mechanisms represented by the sequence of observations
   * Forecasting: predicting the future values of a variable described in the time series
 - Examining multiple time series to model dynamic relationships
 
-> Instructor Note: Have the students list the possible business uses for time series analysis, i.e.: Financial Analysis/Forecasting, retail inventory planning, CDC predictions, neuroscience, signal processing, etc.
 
 **Check:** Recall the `np.correlate` function from Week 2, which we used to analyse the relationship between GOOG and AAPL stocks.
 
 <a name="introduction"></a>
-## The DateTime Object (15 mins)
+## The DateTime Object 
 
 As our data will be ordered by time, we will need a powerful library for dealing with timestamps. Luckily, Python provides a module that gives us both simple and complex methods of manipulating dates and times. The cornerstone of the datetime module is the DateTime object, a container representing a time that is either aware or naive. Aware DateTimes have information regarding time zone and daylight savings time, a naive DateTime does not.
 
@@ -90,8 +88,6 @@ Let's load switch over to the timeseries.ipynb notebook, and I'll walk you throu
 
 Using the Pandas documentation, take a few minutes to read about the `asfreq` and `resample` methods.
 
-> Instructor's Note: Give the students a few minutes to read about these methods. Have a brief discussion about the implications of both.
-
 Let's go back to our timeseries.ipynb notebook and implement the two functions to get a better idea of what they do.
 
 Note that `asfreq` gives us a `method` keyword argument. Backfill, or bfill, will propogate the last valid observation forward. In other words, it will use the value preceding a range of unknown indices to fill in the unknowns. Inversely, pad, or ffill, will use the first value succeeding a range of unknown indices to fill in the unknowns.
@@ -109,7 +105,7 @@ We can also create our own date ranges using a built in function, `date_range`. 
 We are also given a Period object, which can be used to represent a time interval. The Period object consists of a start time and an end time, and can be created by providing a start time and a given frequency.
 
 <a name="ind-practice"></a>
-## Manipulating a Time Series (25 mins)
+## Manipulating a Time Series
 
 Let's break up into groups and look at the different ways we can manipulate our time series.
 
@@ -125,12 +121,6 @@ When you have data on a daily level, use the Period and date_range functionaliti
 - Create a new DataFrame with the daily change for each column in df_goog (hint: you'll need to reset the index to a daily timeframe)
 - Apply models studied previously to gauge the relationship between a random sampling of columns from df_goog
 - Create an Aware DateTime object with Boston's UTC offset.
-
-<a name="conclusion"></a>
-## Recapitulation (5 mins)
-- Recap the objects and methods discussed
-- Discuss how these techniques will help with the Kaggle challenge
-- Repeat the importance of reading the documentation (does it do what you think it does, are you re-inventing the wheel, etc.)
 
 ### ADDITIONAL RESOURCES
 
