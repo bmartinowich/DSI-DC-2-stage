@@ -1,13 +1,5 @@
----
-title: Intro to Pandas & Time Series Data
-duration: "1:25"
-creator:
-    name: Robby Grodin
-    city: Boston
----
-
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Intro to Time Series
-Week 9 | Lesson 1.3
+Week 9 | Lesson 9.01
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -20,11 +12,6 @@ Week 9 | Lesson 1.3
 - Load data into a Pandas DataFrame
 - Access data in a DataFrame object
 - Use Pandas' built in descriptive statistics functions
-
-### INSTRUCTOR PREP
-*Before this lesson, instructors will need to:*
-- Review the GOOG data set from week 2 for familiarity
-- Review both .ipynb notebooks. You will be live-coding the Introduction, Demo, and part of the Discussion sections in these notebooks. **Feel free to diverge from the provided solution code, these are just suggestions. Also, feel free to add more exercises. You know your students best!**
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
