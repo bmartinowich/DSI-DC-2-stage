@@ -1,12 +1,4 @@
----
-title: ARIMA Model
-type: lab
-duration: "1:25"
-creator:
-    name: Robby Grodin
-    city: BOS
----
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) ARIMA Model
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) ARIMA Model Lab
 
 ## Introduction
 
